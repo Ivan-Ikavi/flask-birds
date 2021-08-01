@@ -1,0 +1,40 @@
+body {
+  background-color: DimGray;
+  font-family: "Helvetica", sans-serif;
+  color: GoldenRod;
+}
+
+h1 {
+  /*font-family: "Arial", serif;*/
+  color: gold;
+}
+
+img{
+  border-radius: 10px;
+}
+
+iframe{
+  border-radius: 10px;
+}
+
+nav ul {
+  background-color: gray;
+  border-style: solid;
+  border-color: GoldenRod;
+  border-width: 2px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline;
+    color: PapayaWhip;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: gold;
+}
