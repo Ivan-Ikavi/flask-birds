@@ -5,15 +5,11 @@ body {
 }
 
 h1 {
-  /*font-family: "Arial", serif;*/
   color: gold;
 }
 
-img{
-  border-radius: 10px;
-}
 
-iframe{
+iframe, img{
   border-radius: 10px;
 }
 

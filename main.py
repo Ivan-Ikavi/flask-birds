@@ -2,9 +2,19 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 
+@app.route('/conservation')
+def conservation():
+    return render_template('conservation.html')
+
+
 @app.route('/birds')
 def birds():
     return render_template('birds.html')
+
+
+@app.route('/sanctuaries')
+def sanctuaries():
+    return render_template('sanctuaries.html')
 
 
 @app.route('/hello/<name>')
