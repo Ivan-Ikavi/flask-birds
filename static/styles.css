@@ -1,5 +1,5 @@
 body {
-  background-color: DimGray;
+  background-color: #696969; /*dim gray*/
   font-family: "Helvetica", sans-serif;
   color: #B8860B;
 }
@@ -11,6 +11,10 @@ h1 {
 
 iframe, img{
   border-radius: 10px;
+  border: 2px solid White;
+}
+iframe:hover, img:hover {
+  border: 2px dashed Navy;
 }
 
 nav ul {
@@ -20,6 +24,18 @@ nav ul {
   border-width: 2px;
   padding: 10px;
   border-radius: 10px;
+}
+nav ul li:hover{
+    background-color: black;
+    border-radius: 2px;
+}
+
+.niceLinks {
+  text-decoration: none;
+  color: #FFFAF0;
+}
+.niceLinks:hover {
+  color: #00FF7F;
 }
 
 nav ul li {
@@ -54,6 +70,84 @@ th, td{
 .topDivider {
   border-top-style: solid;
   border-top-width: 2px;
-  border-top-color: #F5FFFA;
+  border-top-color: GoldenRod;
   padding-bottom: 10px;
+}
+
+.stylishBox {
+  background-color: gray;
+  color: GoldenRod;
+  border-style: solid;
+  border-width: 2px;
+  border-color: Gold;
+  border-radius: 10px;
+}
+
+.someSpacing {
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.smallPictures {
+    width: 100px
+}
+
+.mediumPictures{
+    width:150px
+}
+
+#myCoolText {
+    color: #003366;
+    border: 2px ridge #ccffff;
+    padding: 15px;
+    text-align: center;
+    animation-name: rainbowGlow;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+
+#frontPage {
+    background: repeating-linear-gradient(-45deg, red 0%, yellow 7.14%, lime 14.28%, cyan 21.42%, cyan 28.56%, blue 35.7%, magenta 42.84%, red 50%);
+    background-size: 600vw 600vw;
+    animation: slide 5s infinite linear forwards;
+}
+
+#owly {
+    border-radius: 100%;
+    width: 300px;
+    animation-name: myFirstAnimation;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+
+@keyframes myFirstAnimation {
+    from {
+        width: 100px;
+    }
+    to {
+        width: 300px;
+    }
+}
+
+@keyframes rainbowGlow {
+    0% {
+        color: #FFD700;
+    }
+    50% {
+        color: #663399;
+    }
+    100% {
+        color: #FFD700;
+    }
+}
+
+@keyframes slide {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 600vw;
+    }
 }
