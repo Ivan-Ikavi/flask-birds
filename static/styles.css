@@ -1,7 +1,7 @@
 body {
   background-color: DimGray;
   font-family: "Helvetica", sans-serif;
-  color: GoldenRod;
+  color: #B8860B;
 }
 
 h1 {
@@ -33,4 +33,27 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: gold;
+}
+
+table, th, td {
+  border: 1px solid GoldenRod;
+  border-collapse: collapse;
+}
+tr {
+  background-color: Gray;
+}
+th, td {
+  vertical-align: top;
+  padding: 5px;
+  text-align: left;
+}
+th, td{
+  color: GoldenRod;
+}
+
+.topDivider {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #F5FFFA;
+  padding-bottom: 10px;
 }
